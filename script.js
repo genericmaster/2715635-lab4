@@ -1,7 +1,10 @@
 const button = document.getElementById("search-btn")
+const spinner = document.getElementById("loading-spinner")
 
 button.addEventListener("click", async () => {
     try{
+       const currentClass =spinner.getAttribute('class')
+       currentClass.setAttribute()
   const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`)
   if(!response.ok){
     console.error('response failed')
@@ -22,7 +25,7 @@ displaycountry(data) ;
     }
 
 catch (error) {
-  console.error('no')
+  console.error('either the fetch failed or ', error)
 }
             
   });
