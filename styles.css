@@ -1,6 +1,8 @@
 .spinner {
-    color: red;
-    animation:normal; 
+    background-color: red;
+    width: 2em;
+    height: 2em;
+    animation:spin 1s linear infinite;
 }
 
 @keyframes spin {
